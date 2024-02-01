@@ -86,28 +86,36 @@
 		<div class="bottom">Rất hân hạnh được đón tiếp!</div>
 		<script type="text/javascript">
 
+			// Initialize SoundManager2
+			soundManager.setup({
+				onready: function () {
+					// SoundManager2 is ready to use
+					var mySound = soundManager.createSound({
+						id: 'myAudio',
+						url: 'UntilYou.mp3' // path to your audio file
+					});
 
-        // Check if the device has touch support
-        var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
+		 // Check if the device has touch support
+		 var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
-        // Add event listener based on device type
-        if (isTouchDevice) {
-            // Touch-enabled device (mobile or tablet)
-            document.addEventListener('touchstart', function () {
-                // Check if the sound is currently playing
-                if (mySound.playState === 1) {
-                    // If playing, pause the audio
-                    mySound.pause();
-                } else {
-                    // If not playing, play the audio
-                    mySound.play();
-                }
-            });
-        } else {
-						// Play the audio
-						mySound.play();
-   
-        }
+// Add event listener based on device type
+if (isTouchDevice) {
+	// Touch-enabled device (mobile or tablet)
+	document.addEventListener('touchstart', function () {
+		// Check if the sound is currently playing
+		if (mySound.playState === 1) {
+			// If playing, pause the audio
+			mySound.pause();
+		} else {
+			// If not playing, play the audio
+			mySound.play();
+		}
+	});
+} else {
+	mySound.play();
+}
+				}
+			});
 			$(window).bind('mousewheel DOMMouseScroll', function (event) {
 				if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
 					window.location.href = "index";
