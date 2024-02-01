@@ -104,6 +104,7 @@ if (isTouchDevice) {
 	document.addEventListener('touchstart', function () {
 		// Check if the sound is currently playing
 		if (checkTouch== false) {
+			checkTouch= true;
 			// If not playing, play the audio
 			mySound.play();
 		}
