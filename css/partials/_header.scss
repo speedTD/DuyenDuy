@@ -1,0 +1,301 @@
+/*
+    Custom Header
+*/
+.header{
+    background: #fff;
+    padding: 10px 0px;
+    &:after{
+        content:"";
+        clear: both;
+        display: block;
+    }
+    .container{
+        position: relative;
+    }
+    .logo{
+        display: inline-block;
+        
+        img{
+            height: 50px;
+        }
+    }
+    .box-right{
+        margin-top: 10px;
+    }
+    
+
+    .menu-right{
+        display: inline-block;
+        margin-left: 30px;
+        margin-top:10px;
+        vertical-align: middle;
+
+    }
+    .search{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        .icon-search{
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+
+        }
+        .input-search{
+            position: absolute;
+            top:100%;
+            right: 0px;
+            width: 320px;
+            display: none;
+            .form-control{
+                padding-right: 30px;
+
+            }
+            .icon{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                color: #999;
+                top: 5px;
+                left: 0px;
+
+            }
+
+        }
+    }
+    .lang{
+        border-radius: 20px;
+        border: 1px solid #000;
+        display: inline-block;
+        vertical-align: middle;
+        height: 24px;
+        .btn{
+            color: #000;
+            padding: 0px 5px;
+            line-height: 22px;
+            float: left;
+            border-radius: 20px;
+            height: 22px;
+            .fa{
+                line-height: 22px;
+            }
+            &.active{
+                background: #000;
+                color: #fff;
+            }
+
+        }
+    }
+}
+.contact{
+    display: inline-block;
+    vertical-align: middle;
+    .li{
+        display: inline-block;
+        margin-right: 20px;
+        .icon{
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            margin-right: 5px;
+            background: $main;
+            color: #fff;
+            border-radius: 50%;
+        }
+    }
+}
+.nav-toggle {
+    display: none;
+    width: 40px;
+    height: 35px;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    @include mediaQueryMax(1200px){
+        display: block;
+    }
+}
+.nav-toggle .bar {
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: $main;
+    transition: all 0.3s 0.2s;
+    -webkit-transition: all 0.3s 0.2s;
+}
+.nav-toggle .bar.first {
+    bottom: 12px;
+}
+.nav-toggle .bar.last {
+    top: 12px;
+}
+.nav-toggle.active .bar {
+    transition: all 0.3s 0.2s;
+    -webkit-transition: all 0.3s 0.2s;
+}
+.nav-toggle.active .bar.first {
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+.nav-toggle.active .bar.last {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+.nav-toggle.active .bar.mid {
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+
+/*------Banner------*/
+.hero-banner{
+    position: relative;
+    .content{
+        position:relative;    
+    }
+    img{
+        display: block;
+        width: 100%;
+    }
+    .owl-carousel.owl-drag .owl-item:before{
+        position: absolute;
+        content:"";
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        top: 0px;
+        background: linear-gradient(to top,rgba(#000, 0.7) 0%,rgba(#000, 0.2) 30%, rgba(#000, 0) 100% )
+    }
+    .block-text{
+        bottom: 40px;
+        left: 20%;
+        position: absolute;
+        z-index: 4;
+        font-size: 13px;
+        font-family: RobotoCondensed;
+        color: #fff;
+        @include animated(flipInX,0.5s);
+        text-shadow:0px 1px 2px rgba(#000, 0.3); 
+        .cat{
+            display: inline-block;
+            padding: 3px 15px;
+            background: $main;
+            color: #fff;
+            
+            font-size: 12px;
+            margin-bottom: 7px;
+            
+        }
+        .subtitle{
+            
+        }
+        .title{
+            font-size: 3vw;
+            color: #fff;
+            display: block;
+            margin-bottom: 7px;
+            
+        }
+        .btn-readmore{
+            border: 2px solid #fff;
+            border-radius: 0px;
+            display: inline-block;
+            margin-top: 20px;
+            &:hover{
+                background: rgba(#fff, 0.15);
+                color: #fff;
+            }
+        }
+    }
+    .owl-item.active{
+        .block-text{
+            .cat{
+                @include animated(flipInX,0.5s);
+            }
+            .subtitle{
+                @include animated(flipInX,1.5s);
+            }
+            .title{
+                @include animated(fadeInLeft,1s);
+            }
+            .btn-readmore{
+             
+                @include animated(fadeInUp,2s);
+            }
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        bottom:10px;
+        z-index: 3;
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        .owl-dot{
+            width: 14px;
+            display: inline-block;
+            margin-bottom: 10px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            cursor:pointer;
+            margin: 0px 2px;
+            &.active{
+                background: $main;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .block-text{
+            display: none;
+        }
+    }
+    &.-tt{
+        .block-text{
+            bottom: auto;
+            top: 20%;
+            left: 0px;
+            right: 0px;
+        }
+        .info-box{
+            display: table;
+        }
+        .logo-b{
+            width: 220px;
+            display: table-cell;
+            vertical-align: middle;
+            img{
+                width: 100%;
+            }
+        }
+        
+        .content-text{
+            vertical-align: middle;
+            display: table-cell;
+            padding-left: 20px;
+            color: $second;
+            text-shadow: none;
+            font-size: 15px;
+
+        }
+    }
+}

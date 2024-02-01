@@ -1,0 +1,94 @@
+/*
+
+	Footer
+
+ */
+
+
+
+.footer{
+	background: #0655a3;
+	padding: 40px 0px;
+	color: #fff;
+	background-image: linear-gradient(to right, #0655a3,$main);
+	.logo{
+		margin-bottom: 20px;
+		max-width: 160px;
+		img{
+			display: block;
+			max-width:100%;
+		}
+	}
+	.info{
+		.name{
+			font-size:20px;
+			display: block;
+			text-transform: uppercase; 
+		}
+	}
+	
+	.subcribe{
+		display: inline-block;
+		position: relative;
+		margin-bottom: 20px;
+		.form-control{
+			background: rgba(#fff,0.1);
+			border: 0px;
+			padding-right: 100px;
+			color: #fff;
+			border-radius: 0px;
+			&:focus{
+				box-shadow:none;
+
+			}
+
+		}
+		.btn{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			border-radius: 0px;
+			background: $second;
+			color: #fff;
+		}
+	}
+	.social{
+		display: inline-block;
+		.btn{
+			padding: 0px;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			border-radius: 50%;
+			background: #fff;
+			margin-left: 5px;
+			.fa{
+				line-height: 32px;
+			}
+
+		}
+	}
+	.menus-box{
+		.title{
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+	.links{
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		a{
+			display: block;
+			color: #fff;
+			padding: 5px 0px;
+		}
+	}
+	.copyright{
+		text-align: center;
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid rgba(#fff,0.1);
+	}
+}

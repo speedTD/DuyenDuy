@@ -1,0 +1,263 @@
+@import 
+"partials/fonts",
+"partials/mixin",
+"partials/helper",
+"partials/vars",
+"partials/footer",
+"partials/header";
+
+/*style home*/
+body {
+    font-family: 'UTMDaxline';
+    font-size: 18px;
+    background: #fdfbf5;
+    color: #1b1919;
+    overflow-x: hidden;
+}
+
+
+.box-invitation{
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+}
+.bg-top{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: auto 400px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 10;
+}
+.bg-right-cover{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.bg-left,.bg-right{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: auto 400px;
+    background-repeat: no-repeat;
+}
+.bg-left{
+    background-position: top left;
+}
+.bg-right{
+    background-position: bottom right;
+}
+.loading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 200;
+    background-color:#fff;
+    background-size: 200px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+    &.hide{
+        transition: all 0.3s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+
+}
+.content-frontend{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+    max-width: 991px;
+    z-index: 100;
+    margin: auto;
+    text-align: center;
+    .title{
+        max-width: 510px;
+        display: inline-block;
+        background-size: cover !important;
+        img{
+            width: 100%;
+            opacity: 0.6;
+            padding: 25px 0px;
+        }
+    }
+    .head-info{
+        margin-bottom: 20px;
+        .thank{
+            font-family: "UTMViceroyJF";
+            color: #69655d;
+            display: block;
+            font-size: 24px;
+        }
+        .corner{
+            height: 40px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .username{
+        margin-bottom: 20px;
+    }
+    .time-box{
+        margin-bottom: 20px;
+        .date{
+            font-size: 60px;
+            line-height: 60px;
+            color: $main;
+            font-family: "MonotypeCorsiva";
+        }
+    }
+
+}
+
+.username{
+    font-size: 40px;
+    margin-top: 50px;
+    font-family: "UTMViceroyJF";
+    .icon{
+        width: 60px;
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+    }
+}
+.copyright{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    font-family: "UTMScriptinaKT";
+    font-size: 24px;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-family: "UTMViceroyJF";
+    font-size: 24px;
+    color: $second;
+
+}
+
+.actions{
+    margin-top: 40px;
+    .btn{
+        width: 250px;
+        margin: 10px 5px;
+        color: $main;
+        font-family: "UTMViceroyJF";
+        font-size: 24px;
+        border: 1px solid $main;
+        &:hover{
+            background: $main;
+            color: #fff;
+        }
+        
+    }
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 3px 10px rgba(#000,0.2);
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+}
+.box-add{
+    margin-top: 20px;
+    .and{
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        &:before{
+            height: 1px;
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            background: #ddd;
+        }
+        span{
+            background: #fdfbf5;
+            position: relative;
+            z-index: 2;
+            padding: 5px 10px;
+        }
+    }
+    .title{
+        color: $main;
+        font-family: "UTMViceroyJF";
+        display: block;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .map{
+        margin-top: 20px;
+    }
+}
+@media(max-width:768px){
+    .bg-top{
+        bottom: auto;
+        height: 200px;
+        background-size:auto 100%;
+    }
+    .username{
+        .icon{
+            width: 100%;
+            margin: 20px auto;
+            img{
+                width: 60px;
+            }
+        }
+    }
+    .box-invitation,.bottom,.content-frontend{
+        position: relative;
+        top: 0px;
+        transform: none;
+    }
+
+    .content-frontend{
+        .time-box{
+            .date{
+                font-size: 50px;
+            }
+        }
+    }
+}
+

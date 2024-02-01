@@ -1,0 +1,453 @@
+// color
+.background-graylight {
+    background-color: rgba(246,247,249,1);
+}
+.background-white {
+    background-color: #fff;
+}
+
+// grid
+// @for $i from 1 through 12 {
+//     .container-col-#{$i} {
+//         width: percentage($i/12);
+//         margin: 0 auto;
+//         @include mediaMaxWidth(768px) {
+//             width: 100%;
+//             padding: 0 20px;
+//         }
+//     }
+// }
+
+// @for $i from 1 through 12 {
+//     .grid-col-#{$i} {
+//         width: percentage($i/12);
+//         float: left;
+//         @include mediaMaxWidth(768px) {
+//             width: 100%;
+//         }
+//     }
+// }
+
+// @for $i from 1 through 10 {
+//     .grid10-col-#{$i} {
+//         width: percentage($i/10);
+//         float: left;
+//         @include mediaMaxWidth(768px) {
+//             width: 100%;
+//         }
+//     }
+// }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fri {
+    float: right !important;
+}
+
+.lsn,
+.lsn>li {
+    list-style: none;
+}
+
+.posr {
+    position: relative;
+}
+
+.posa {
+    position: absolute;
+}
+
+.posf {
+    position: fixed;
+}
+
+.imgdf>img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.dib {
+    display: inline-block;
+}
+.dtb {
+    display: table;
+}
+
+.dtbc {
+    display: table-cell;
+}
+
+.pt0 {
+    padding-top: 0 !important;
+}
+
+.pr0 {
+    padding-right: 0 !important;
+}
+
+.pt0 {
+    padding-top: 0 !important;
+}
+
+.pb0 {
+    padding-bottom: 0 !important;
+}
+
+.tac {
+    text-align: center;
+}
+
+.taj {
+    text-align: justify;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.tdu {
+    text-decoration: underline;
+}
+
+.tdn {
+    text-decoration: none;
+}
+
+.fwb {
+    font-weight: bold;
+}
+.vat {
+    vertical-align: top;
+}
+
+.fwb {
+    font-weight: bold;
+}
+.fw2 {
+    font-weight: 200;
+}
+.fw3 {
+    font-weight: 300;
+}
+.fw4 {
+    font-weight: 400;
+}
+.fw5 {
+    font-weight: 500;
+}
+.fw6 {
+    font-weight: 600;
+}
+.fw7 {
+    font-weight: 700;
+}
+.fw8 {
+    font-weight: 800;
+}
+.fw9 {
+    font-weight: 900;
+}
+
+.fwsb {
+    font-weight: 600;
+}
+
+.color-blue {
+    color: #824198;
+}
+.color-blue-bold {
+    color: #4B3C50;
+}
+.color-gray-bold {
+    color: #63676E;
+}
+
+.ovfh {
+    overflow: hidden;
+}
+.img-background-full-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    min-height: 101%;
+    min-width: 101%;
+}
+
+.tar {
+    text-align: right;
+}
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.tleft {
+    text-align: left;
+}
+
+.tright {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.left,
+.ap-left {
+    float: left;
+}
+
+.right,
+.ap-right {
+    float: right;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+@mixin xdot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.xo,
+.ap-xo {
+    overflow: hidden;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.fullw {
+    width: 100%;
+}
+
+.fullh {
+    height: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.table {
+    display: table;
+}
+
+.invisible,
+.ap-invisible {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.vtop {
+    vertical-align: top;
+}
+
+.vcenter {
+    vertical-align: middle;
+}
+
+.vbottom {
+    vertical-align: bottom;
+}
+
+.f9 {
+    font-size: 9px;
+}
+
+.f10 {
+    font-size: 10px;
+}
+
+.f11 {
+    font-size: 11px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f13 {
+    font-size: 13px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f15 {
+    font-size: 15px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f17 {
+    font-size: 17px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f19 {
+    font-size: 19px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f21 {
+    font-size: 21px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f23 {
+    font-size: 23px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.f25 {
+    font-size: 25px;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f27 {
+    font-size: 27px;
+}
+
+.f28 {
+    font-size: 28px;
+}
+
+.f29 {
+    font-size: 29px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.f31 {
+    font-size: 31px;
+}
+
+.f32 {
+    font-size: 32px;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.thick {
+    font-weight: 500;
+}
+@mixin borderbox {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+    .hidden-devide-1024 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .show-devide-1024 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-devide-768 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .show-devide-768 {
+        display: none !important;
+    }
+}

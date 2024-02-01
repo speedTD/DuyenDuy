@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Wedding </title>
+	<link rel="stylesheet" type="text/css" href="assets/ap8/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="script/soundmanager2.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="assets/jquery/jquery.2.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #f1fbed;">
+	<div class="loading" style="background-image: url(images/loading.svg);">
+
+	</div>
+	<script type="text/javascript">
+		setTimeout(function () { $(".loading").addClass("hide") }, 800);
+	</script>
+	<div class="box-invitation-info">
+		<div class="bg-left" style="background-image: url(images/info/follower-left.png);"></div>
+		<div class="bg-right" style="background-image: url(images/info/follower-right.png);"></div>
+		<div class="content-frontend">
+			<div class="head-info">
+				<div class="thank">Trân trọng kính mời</div>
+				<div class="corner"><img src="images/corners.png" alt=""></div>
+			</div>
+			<div class="username">
+				Tô Duy <span class="icon"><img src="images/and.png"></span> Nguyễn Duyên
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<div class="time-box" style="text-align: center;">
+
+						<p class="info">Tới dự bữa cơm thân mật</p>
+						<div class="txt"> Vào lúc 09:30 Thứ Bảy ngày</div>
+						<div class="date">24.02.2024</div>
+						<div class="al">(Tức ngày 15/01 năm Giáp Thìn)</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="time-box" style="text-align: center;">
+						<p class="info">Lễ thành hôn được tổ chức</p>
+						<div class="txt">Vào hồi 13h00 Chủ Nhật ngày</div>
+						<div class="date">25.02.2024</div>
+						<div class="al">(Tức ngày 16/01 năm Giáp Thìn)</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="avatar" style="background-image: url(images/bg.JPG);">
+
+			</div>
+
+
+			<div class="box-add">
+				<div class="and">
+					<span>Tại</span>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 div1">
+						<div class="title">Nhà Trai</div>
+						<div class="info">
+							Thôn Lam Điền - Xã Lam Điền - Huyện Chương MỸ - Thành Phố Hà Nội
+						</div>
+						<div class="map">
+							<a href="https://maps.app.goo.gl/s24jzXNSwDPFbMgi9" class=""><span class="-ap icon-location5 icon"></span> Xem bản đồ</a>
+						</div>
+						<img src="images/qr.png" style="width: 100px; margin-top: 10px">
+					</div>
+					<div class="col-sm-6 col-xs-12 div2">
+						<div class="title">Nhà Gái</div>
+						<div class="info">
+							Thôn Tân An - Xã Thụy Hương - Huyện Chương MỸ - Thành Phố Hà Nội
+						</div>
+						<div class="map">
+							<a href="https://maps.app.goo.gl/Mn1doseNC3Yf1CkNA" class=""><span class="-ap icon-location5 icon"></span> Xem bản đồ</a>
+						</div>
+						<img src="images/qr.png" style="width: 100px; margin-top: 10px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">Rất hân hạnh được đón tiếp!</div>
+		<script type="text/javascript">
+
+			// Initialize SoundManager2
+			soundManager.setup({
+				onready: function () {
+					// SoundManager2 is ready to use
+					var mySound = soundManager.createSound({
+						id: 'myAudio',
+						url: 'UntilYou.mp3' // path to your audio file
+					});
+
+					// Play the audio
+					mySound.play();
+				}
+			});
+			$(window).bind('mousewheel DOMMouseScroll', function (event) {
+				if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+					window.location.href = "index";
+
+				}
+				else {
+
+				}
+			});
+			if (typeof $pdj == 'undefined') {
+				document.write('<' + 'script');
+				document.write(' language="javascript"');
+				document.write(' type="text/javascript"');
+				document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">');
+				document.write('</' + 'script' + '>')
+			} </script><script>if (typeof $pdj == 'undefined') { var $pdj = jQuery.noConflict() } if (!image_urls) { var image_urls = Array() } if (!flash_urls)
+				{ var flash_urls = Array() } image_urls['corazon'] = "images/H.jpg"; $pdj(document).ready(function () { var c = $pdj(window).width(); var d = $pdj(window).height(); var e = function (a, b) { return Math.round(a + (Math.random() * (b - a))) }; var f = function (a) { setTimeout(function () { a.css({ left: e(0, c) + 'px', top: '-30px', display: 'block', opacity: '0.' + e(10, 100) }).animate({ top: (d - 10) + 'px' }, e(8500, 10000), function () { $pdj(this).fadeOut('slow', function () { f(a) }) }) }, e(1, 9000)) }; $pdj('<div></div>').attr('id', 'corazonDiv').css({ position: 'fixed', width: (c - 20) + 'px', height: '1px', left: '0px', top: '-5px', display: 'block' }).appendTo('body'); for (var i = 1; i <= 15; i++){ var g = $pdj('<img/>').attr('src', image_urls['corazon']).css({ position: 'absolute', left: e(0, c) + 'px', top: '-30px', display: 'block', opacity: '0.' + e(10, 100), 'margin-left': 0 }).addClass('corazonDrop').appendTo('#corazonDiv'); f(g); g = null }; var h = 0; var j = 0; $pdj(window).resize(function () { c = $pdj(window).width(); d = $pdj(window).height() }) });
+		
+		</script>
+	</div>
+</body>
+</html>
