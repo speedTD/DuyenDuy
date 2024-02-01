@@ -97,9 +97,14 @@
 
 					// Play the audio
 					mySound.play();
-					document.addEventListener('touchstart', function () {
-            mySound.play();
-        });
+	        // Check if the sound is currently playing
+	       if (mySound.playState === 1) {
+                // If playing, pause the audio
+                
+            } else {
+                // If not playing, play the audio
+                mySound.play();
+            }
 				}
 			});
 			$(window).bind('mousewheel DOMMouseScroll', function (event) {
