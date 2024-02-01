@@ -85,7 +85,7 @@
 		</div>
 		<div class="bottom">Rất hân hạnh được đón tiếp!</div>
 		<script type="text/javascript">
-
+           var checkTouch = false;
 			// Initialize SoundManager2
 			soundManager.setup({
 				onready: function () {
@@ -103,10 +103,7 @@ if (isTouchDevice) {
 	// Touch-enabled device (mobile or tablet)
 	document.addEventListener('touchstart', function () {
 		// Check if the sound is currently playing
-		if (mySound.playState === 1) {
-			// If playing, pause the audio
-			mySound.pause();
-		} else {
+		if (checkTouch== false) {
 			// If not playing, play the audio
 			mySound.play();
 		}
